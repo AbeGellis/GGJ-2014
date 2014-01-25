@@ -11,7 +11,7 @@ public class Platform : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	protected virtual void Update () {
 		renderer.material.color = getPlatColor(color);
 	}
 
