@@ -4,11 +4,7 @@ using System.Collections;
 public class PlayerMove : MonoBehaviour {
 
 	public float speed = 10f;
-	ParticleEmitter sparks;
-
-	void Start(){
-		sparks = transform.Find("Sparks").GetComponent<ParticleEmitter>();
-	}
+	public ParticleEmitter sparks;
 
 	void FixedUpdate(){
 		sparks.emit = false;
