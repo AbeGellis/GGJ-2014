@@ -4,8 +4,14 @@ using System.Collections;
 public class PlayerMove : MonoBehaviour {
 
 	public float speed = 10f;
+	ParticleEmitter sparks;
+
+	void Start(){
+		sparks = transform.Find("Sparks").GetComponent<ParticleEmitter>();
+	}
 
 	void FixedUpdate(){
+		sparks.emit = false;
 	}
 
 	void OnCollisionEnter2D(Collision2D c){
@@ -13,10 +19,12 @@ public class PlayerMove : MonoBehaviour {
 		Debug.Log("hit platform");
 		transform.rotation = c.transform.rotation;
 		rigidbody2D.velocity = transform.right * speed;
+		sparks.emit = true;
 	}
 
 	void OnCollisionStay2D(Collision2D c){
 		rigidbody2D.velocity = transform.right * speed;
+		sparks.emit = true;
 	}
 
 }
