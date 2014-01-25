@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Scripts/Camera Scripts/SmoothFollow.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMove.cs">
     <Files>
       <File FileName="Assets/Scripts/Platform.cs" Line="36" Column="52" />
       <File FileName="Assets/Scripts/ChangeColor.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerMove.cs" Line="14" Column="3" />
-      <File FileName="Assets/Standard Assets/Scripts/Camera Scripts/SmoothFollow.js" Line="53" Column="4" />
+      <File FileName="Assets/Scripts/PlayerMove.cs" Line="12" Column="69" />
+      <File FileName="Assets/CameraFollow.cs" Line="11" Column="24" />
+      <File FileName="Assets/iTween/Plugins/iTween.cs" Line="2653" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
