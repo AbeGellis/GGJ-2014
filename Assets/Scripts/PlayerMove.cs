@@ -18,6 +18,7 @@ public class PlayerMove : MonoBehaviour {
 	}
 
 	void OnCollisionStay2D(Collision2D c){
+		Camera.main.GetComponent<CameraFollow>().Shake(.1f,.1f,.2f);
 		rigidbody2D.velocity = transform.right * speed;
 		sparks.emit = true;
 

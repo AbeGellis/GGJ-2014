@@ -315,16 +315,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ac362957756ee49d2b45e8b848883620, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: .366501272
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ac362957756ee49d2b45e8b848883620, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: .930417538
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: ac362957756ee49d2b45e8b848883620, type: 2}
       propertyPath: sparks
       value: 
       objectReference: {fileID: 1262563711}
+    - target: {fileID: 5800000, guid: ac362957756ee49d2b45e8b848883620, type: 2}
+      propertyPath: m_Radius
+      value: .0500000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: ac362957756ee49d2b45e8b848883620, type: 2}
+      propertyPath: m_Center.x
+      value: -.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800002, guid: ac362957756ee49d2b45e8b848883620, type: 2}
+      propertyPath: m_Center.x
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800002, guid: ac362957756ee49d2b45e8b848883620, type: 2}
+      propertyPath: m_Radius
+      value: .0500000007
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac362957756ee49d2b45e8b848883620, type: 2}
   m_RootGameObject: {fileID: 972357211}
@@ -446,7 +462,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400002, guid: ac362957756ee49d2b45e8b848883620, type: 2}
   m_PrefabInternal: {fileID: 964308264}
   m_GameObject: {fileID: 972357211}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: .366501272, w: .930417538}
   m_LocalPosition: {x: 1.29495716, y: 6.3965435, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -461,8 +477,8 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 6200000, guid: 4c4e6d3f9e07b41928854c570a93f7cf, type: 2}
   m_IsTrigger: 0
-  m_Radius: .100000001
-  m_Center: {x: .449999988, y: 0}
+  m_Radius: .0500000007
+  m_Center: {x: .5, y: 0}
 --- !u!58 &972357220
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -473,8 +489,8 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 6200000, guid: 4c4e6d3f9e07b41928854c570a93f7cf, type: 2}
   m_IsTrigger: 0
-  m_Radius: .100000001
-  m_Center: {x: -.449999988, y: 0}
+  m_Radius: .0500000007
+  m_Center: {x: -.5, y: 0}
 --- !u!1 &1174257651
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,8 +846,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   growThreshold: 1
   killThreshold: 1
-  top: 10
-  bottom: 10
+  top: 2.5
+  bottom: 2.5
   extensionPrefabs:
   - {fileID: 100000, guid: 6bffa929610cd8e47a52522685d0f042, type: 2}
   - {fileID: 100002, guid: 0a08d67b37e852641b8876fff38005a6, type: 2}
@@ -865,6 +881,7 @@ GameObject:
   - 124: {fileID: 1930378193}
   - 81: {fileID: 1930378192}
   - 114: {fileID: 1930378197}
+  - 114: {fileID: 1930378199}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -946,6 +963,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tofollow: {fileID: 223822272}
+--- !u!114 &1930378199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1930378191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9aaa3f5f2d574f228e4a21aa38b61e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 2
+  showGeneratedNormals: 0
+  offsetScale: .200000003
+  blurRadius: 18
+  edgeThresholdMin: .0500000007
+  edgeThreshold: .200000003
+  edgeSharpness: 4
+  dlaaSharp: 0
+  ssaaShader: {fileID: 4800000, guid: b3728d1488b02490cbd196c7941bf1f8, type: 3}
+  dlaaShader: {fileID: 4800000, guid: 017ca72b9e8a749058d13ebd527e98fa, type: 3}
+  nfaaShader: {fileID: 4800000, guid: ce0cb2621f6d84e21a87414e471a3cce, type: 3}
+  shaderFXAAPreset2: {fileID: 4800000, guid: 6f1418cffd12146f2a83be795f6fa5a7, type: 3}
+  shaderFXAAPreset3: {fileID: 4800000, guid: c182fa94a5a0a4c02870641efcd38cd5, type: 3}
+  shaderFXAAII: {fileID: 4800000, guid: cd5b323dcc592457790ff18b528f5e67, type: 3}
+  shaderFXAAIII: {fileID: 4800000, guid: c547503fff0e8482ea5793727057041c, type: 3}
 --- !u!1 &2015210547
 GameObject:
   m_ObjectHideFlags: 0
