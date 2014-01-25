@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public enum PlatColor {Red, Blue, Yellow, Violet, Green, Orange};
-
 public class Platform : MonoBehaviour {
+	public enum PlatColor {Red, Blue, Yellow, Violet, Green, Orange};
 
 	public PlatColor color;
 
@@ -13,11 +12,11 @@ public class Platform : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		renderer.material.color = getPlatColor();
+		renderer.material.color = getPlatColor(color);
 	}
 
-	public Color getPlatColor() {
-		switch (color) {
+	public Color getPlatColor(PlatColor p) {
+		switch (p) {
 		case PlatColor.Red:
 			return Color.red;
 		case PlatColor.Blue:
