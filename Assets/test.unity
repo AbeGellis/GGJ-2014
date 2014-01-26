@@ -201,6 +201,68 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startColor: 0
+--- !u!1 &215845907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 215845908}
+  - 61: {fileID: 215845909}
+  - 114: {fileID: 215845910}
+  - 114: {fileID: 215845911}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &215845908
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215845907}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.60338306, y: -10.8963766, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1930378196}
+--- !u!61 &215845909
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215845907}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 100, y: 1}
+  m_Center: {x: 0, y: 0}
+--- !u!114 &215845910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215845907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c06a8d002e86463886c0366a1c68bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &215845911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215845907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e26e32fac3f34c44bf34593bb68bb9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &223822271
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +800,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1225079962}
   - 58: {fileID: 1225079963}
+  - 114: {fileID: 1225079964}
   m_Layer: 0
   m_Name: circle
   m_TagString: Untagged
@@ -768,6 +831,17 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .0500000007
   m_Center: {x: 0, y: 0}
+--- !u!114 &1225079964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1225079961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d75468bca8704b208706304378121e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1262563707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,6 +1076,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1594959756}
   - 58: {fileID: 1594959757}
+  - 114: {fileID: 1594959758}
   m_Layer: 0
   m_Name: circle
   m_TagString: Untagged
@@ -1032,6 +1107,17 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .0500000007
   m_Center: {x: 0, y: 0}
+--- !u!114 &1594959758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1594959755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d75468bca8704b208706304378121e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1623944253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,6 +1127,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1623944255}
   - 61: {fileID: 1623944254}
+  - 114: {fileID: 1623944256}
   m_Layer: 0
   m_Name: box
   m_TagString: Untagged
@@ -1071,6 +1158,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 972357218}
+--- !u!114 &1623944256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1623944253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d75468bca8704b208706304378121e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1854700884
 Prefab:
   m_ObjectHideFlags: 0
@@ -1251,6 +1349,7 @@ Transform:
   m_LocalPosition: {x: 7.60338306, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 215845908}
   - {fileID: 1174257652}
   m_Father: {fileID: 0}
 --- !u!114 &1930378197

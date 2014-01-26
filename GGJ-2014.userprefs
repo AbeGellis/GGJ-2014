@@ -1,19 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Timer.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DisplayTime.cs">
     <Files>
       <File FileName="Assets/Scripts/Platform.cs" Line="28" Column="40" />
-      <File FileName="Assets/Scripts/ChangeColor.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerMove.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ChangeColor.cs" Line="15" Column="31" />
+      <File FileName="Assets/Scripts/PlayerMove.cs" Line="14" Column="1" />
       <File FileName="Assets/Follower.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/GrowControl.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Components/BasicComponent.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ColorManager.cs" Line="1" Column="1" />
       <File FileName="Assets/PlaySoundWhileEmitting.cs" Line="1" Column="1" />
       <File FileName="Assets/PlaySparkSound.cs" Line="1" Column="1" />
-      <File FileName="Assets/RestartLevel.cs" Line="1" Column="1" />
-      <File FileName="Assets/LoadGame.cs" Line="15" Column="4" />
-      <File FileName="Assets/Timer.cs" Line="8" Column="1" />
+      <File FileName="Assets/RestartLevel.cs" Line="7" Column="26" />
+      <File FileName="Assets/LoadGame.cs" Line="1" Column="1" />
+      <File FileName="Assets/Timer.cs" Line="6" Column="15" />
+      <File FileName="Assets/DisplayTime.cs" Line="9" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
