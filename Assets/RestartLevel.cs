@@ -4,6 +4,6 @@ using System.Collections;
 public class RestartLevel : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D c){
-		Application.LoadLevel(0);
+		Application.LoadLevel(Application.loadedLevel);
 	}
 }
