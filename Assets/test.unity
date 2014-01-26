@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 80738917}
   - 114: {fileID: 80738918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Connector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ Transform:
   m_GameObject: {fileID: 80738916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.24894381, y: .4372572, z: 0}
-  m_LocalScale: {x: 20, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 1, z: 1}
   m_Children:
   - {fileID: 1410438616}
   - {fileID: 799758045}
@@ -279,19 +279,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bffa929610cd8e47a52522685d0f042, type: 2}
       propertyPath: m_LocalScale.x
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 6bffa929610cd8e47a52522685d0f042, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 6bffa929610cd8e47a52522685d0f042, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6bffa929610cd8e47a52522685d0f042, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6bffa929610cd8e47a52522685d0f042, type: 2}
@@ -361,7 +361,12 @@ Prefab:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6100000, guid: ac362957756ee49d2b45e8b848883620, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6100000, guid: ac362957756ee49d2b45e8b848883620, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ac362957756ee49d2b45e8b848883620, type: 2}
   m_RootGameObject: {fileID: 972357211}
   m_IsPrefabParent: 0
@@ -378,7 +383,7 @@ GameObject:
   - 23: {fileID: 799758043}
   - 61: {fileID: 799758042}
   - 114: {fileID: 799758041}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,8 +453,8 @@ Transform:
   m_PrefabInternal: {fileID: 390494415}
   m_GameObject: {fileID: 799758040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: .200000003, z: .5}
+  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalScale: {x: 7, y: .200000003, z: .5}
   m_Children: []
   m_Father: {fileID: 80738917}
 --- !u!1 &972357211
@@ -461,7 +466,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 972357218}
   - 114: {fileID: 972357215}
-  - 61: {fileID: 972357214}
   - 50: {fileID: 972357213}
   - 114: {fileID: 972357212}
   - 58: {fileID: 972357219}
@@ -469,6 +473,7 @@ GameObject:
   - 82: {fileID: 972357221}
   - 212: {fileID: 972357217}
   - 95: {fileID: 972357216}
+  - 61: {fileID: 972357214}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -512,15 +517,14 @@ Rigidbody2D:
 --- !u!61 &972357214
 BoxCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100000, guid: ac362957756ee49d2b45e8b848883620,
-    type: 2}
-  m_PrefabInternal: {fileID: 630331644}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 972357211}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Material: {fileID: 6200000, guid: 4c4e6d3f9e07b41928854c570a93f7cf, type: 2}
   m_IsTrigger: 0
   m_Size: {x: 1, y: .100000001}
-  m_Center: {x: 0, y: 0}
+  m_Center: {x: 0, y: .0500000007}
 --- !u!114 &972357215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -905,7 +909,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1410438616}
   - 114: {fileID: 1410438617}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -919,7 +923,7 @@ Transform:
   m_PrefabInternal: {fileID: 390494415}
   m_GameObject: {fileID: 1410438615}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 0, z: 0}
+  m_LocalPosition: {x: 7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 80738917}
@@ -1143,7 +1147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growThreshold: 1
-  killThreshold: 1
+  killThreshold: 2
   top: 2.5
   bottom: 2.5
   extensionPrefabs:

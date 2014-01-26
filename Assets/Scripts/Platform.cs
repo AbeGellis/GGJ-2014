@@ -25,7 +25,7 @@ public class Platform : MonoBehaviour {
 			(collider2D as BoxCollider2D).center = raise;
 		}*/
 		if (!solid)
-			(collider2D as BoxCollider2D).center = new Vector2(0f, 10f);
+			(collider2D as BoxCollider2D).center = new Vector2(0f, 100f);
 	}
 
 	public Color getPlatColor(PlatColor p) {
