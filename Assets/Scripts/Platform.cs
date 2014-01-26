@@ -31,17 +31,17 @@ public class Platform : MonoBehaviour {
 	public Color getPlatColor(PlatColor p) {
 		switch (p) {
 		case PlatColor.Red:
-			return Color.red;
+			return ColorManager.red;
 		case PlatColor.Blue:
-			return Color.blue;
+			return ColorManager.blue;
 		case PlatColor.Green:
-			return Color.green;
+			return ColorManager.green;
 		case PlatColor.Orange:
-			return Color.Lerp(Color.red, Color.yellow, .5f);
+			return ColorManager.orange;
 		case PlatColor.Violet:
-			return Color.Lerp(Color.red, Color.blue, .5f);
+			return ColorManager.violet;
 		case PlatColor.Yellow:
-			return Color.yellow;
+			return ColorManager.yellow;
 		}
 		return Color.white;
 	}
