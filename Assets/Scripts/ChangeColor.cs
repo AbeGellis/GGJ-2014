@@ -7,6 +7,7 @@ public class ChangeColor : MonoBehaviour {
 	AudioSource a;
 
 	void Awake () {
+		Timer.timer = 0;
 		renderer.material.color = ColorManager.red;
 		ColorManager.red.a = 1f;
 		ColorManager.yellow.a = .15f;
