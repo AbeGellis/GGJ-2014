@@ -6,7 +6,8 @@ public class ChangeColor : MonoBehaviour {
 	public KeyCode red, yellow, blue;
 	AudioSource a;
 
-	void Start () {
+	void Awake () {
+		Timer.timer = 0;
 		renderer.material.color = ColorManager.red;
 		ColorManager.red.a = 1f;
 		ColorManager.yellow.a = .15f;
