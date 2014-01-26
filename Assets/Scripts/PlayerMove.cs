@@ -8,6 +8,15 @@ public class PlayerMove : MonoBehaviour {
 
 	void FixedUpdate(){
 		sparks.emit = false;
+		RaycastHit2D[] above = Physics2D.RaycastAll(transform.position, Vector2.up * 40);
+		Platform[] plats = FindObjectsOfType<Platform> ();
+		foreach (Platform p in plats) {
+			p.solid = true;
+		}
+		foreach (RaycastHit2D r in above) {
+			if (r.collider.gameObject.GetComponent<Platform>() != null)
+				r.collider.gameObject.GetComponent<Platform>().solid = false;
+		}
 	}
 
 	void OnCollisionEnter2D(Collision2D c){
